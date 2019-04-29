@@ -9,7 +9,7 @@ _randPass() {
 _checkEnv() {
     if [ -z "${PROXY_MAXCONN}" ]; then
 	    export PROXY_MAXCONN="32"
-	fi
+    fi
 }
 
 # Create specified users or a test user
