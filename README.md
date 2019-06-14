@@ -19,3 +19,5 @@ $ docker run --name 3proxy -d -p 1080:1080 -e PROXY_SECRET="user:P@SSw0rd" grffi
 
 - Exposed Ports:
   - 1080/tcp
+
+An example how to use with docker-compose [shadownet-compose](https://github.com/grffio/shadownet-compose)
