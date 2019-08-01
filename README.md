@@ -1,6 +1,10 @@
 # 3proxy-dockerfile
 Dockerfile for "3proxy" SOCKS5 proxy server on Alpine Linux for Telegram
 
+Features
+--------
+- It is possible to specify multiple users with their passwords
+
 Build
 -----
 ```
