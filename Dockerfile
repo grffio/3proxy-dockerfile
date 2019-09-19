@@ -1,5 +1,5 @@
 FROM alpine:3.10 as builder
-ARG PROXY_VER="0.8.12"
+ARG PROXY_VER="0.8.13"
 WORKDIR /3proxy
 RUN apk add --update alpine-sdk bash wget && \
     wget -q https://github.com/z3APA3A/3proxy/archive/${PROXY_VER}.tar.gz && \

@@ -10,7 +10,7 @@ Build
 ```
 $ docker build -t grffio/3proxy .
 ```
-- Supported Args: `PROXY_VER=0.8.12`
+- Supported Args: `PROXY_VER=0.8.13`
 
 Quick Start
 -----------
