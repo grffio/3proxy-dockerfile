@@ -8,7 +8,7 @@ _randPass() {
 # Check environment variables and set default values
 _checkEnv() {
     if [ -z "${PROXY_MAXCONN}" ]; then
-	    export PROXY_MAXCONN="32"
+        export PROXY_MAXCONN="32"
     fi
 }
 
