@@ -45,7 +45,6 @@ jobs:
         with:
           images: ${{ secrets.DOCKERHUB_USERNAME }}/3proxy
           tags: |
-            type=raw,value=latest
             type=semver,pattern={{raw}}
 
       - name: Image tags
