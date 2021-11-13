@@ -1,10 +1,10 @@
 FROM alpine:3.14 as builder
 ARG PROXY_VER="0.9.3"
 WORKDIR /3proxy
-RUN apk add --update alpine-sdk linux-headers bash curl && \
-    curl -LO https://github.com/z3APA3A/3proxy/archive/${PROXY_VER}.tar.gz && \
-    tar -xzf ${PROXY_VER}.tar.gz -C /3proxy --strip-components=1 && \
-    make -f Makefile.Linux
+RUN apk add --update alpine-sdk linux-headers bash curl
+RUN curl -LO https://github.com/z3APA3A/3proxy/archive/${PROXY_VER}.tar.gz && \
+    tar -xzf ${PROXY_VER}.tar.gz -C /3proxy --strip-components=1
+RUN make -f Makefile.Linux
 
 FROM alpine:3.14
 RUN apk add --update bind-tools tini && \
